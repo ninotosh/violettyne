@@ -1,0 +1,11 @@
+- name: install node js
+  apt: name=nodejs state=present
+  sudo: yes
+- name: sym link node
+  file: src=/usr/bin/nodejs dest=/usr/bin/node state=link
+  sudo: yes
+- name: install npm
+  apt: name=npm state=present
+  sudo: yes
+- name: install node packages
+  npm: path={{app_dir}} state=present

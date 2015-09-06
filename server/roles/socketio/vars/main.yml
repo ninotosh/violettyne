@@ -1,0 +1,2 @@
+home_dir: /home/vagrant
+app_dir: "{{home_dir}}/violettyne"

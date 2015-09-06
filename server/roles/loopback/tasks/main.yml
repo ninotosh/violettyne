@@ -1,0 +1,11 @@
+- apt: name=nodejs state=present
+  sudo: yes
+- file: src=/usr/bin/nodejs dest=/usr/bin/node state=link
+  sudo: yes
+- apt: name=npm state=present
+  sudo: yes
+- npm: name=strongloop global=yes
+  sudo: yes
+- name: copy upstart file
+  template: src=loopback.conf dest=/etc/init/
+  sudo: yes

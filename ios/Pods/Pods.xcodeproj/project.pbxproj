@@ -1,0 +1,435 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		37023B1C2FDD552B9FA2BB1D /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC50BCCE00207E2A5B2771D /* Pods-dummy.m */; };
+		3BE33C0FA83A54D7B3929F1E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 132A5D44C37D8085FA00EFEF /* Foundation.framework */; };
+		48C64EDD5B821407DB49960E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 132A5D44C37D8085FA00EFEF /* Foundation.framework */; };
+		6FEA3184F853918E27038A78 /* socket.io.js.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D460FC5C57E64B237D8A755 /* socket.io.js.h */; };
+		974E10736EDE43C9C39CB2F6 /* SIOSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 1575985941173DA1B1A21790 /* SIOSocket.h */; };
+		A898A41D4B7B80AB002A09F6 /* SIOSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DA152E7FB3468EB859572D6 /* SIOSocket.m */; };
+		F5EF23CF870826AFDBD3BC5A /* Pods-SIOSocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FB15D8B32480A94F22D41819 /* Pods-SIOSocket-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E1401D1F8AA46EFA72268E92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83B21EEE3D71E4B51869C7B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59B98DEA10B2D1D9B02BA0A1;
+			remoteInfo = "Pods-SIOSocket";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		132A5D44C37D8085FA00EFEF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		1575985941173DA1B1A21790 /* SIOSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SIOSocket.h; path = SocketIO/Source/SIOSocket.h; sourceTree = "<group>"; };
+		3CC50BCCE00207E2A5B2771D /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		500D9B0221B101D47FDAC306 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		62CE2ED5F98258D05401EB1F /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		6D2A6B978C1E5FFDC618F77B /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
+		7D460FC5C57E64B237D8A755 /* socket.io.js.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = socket.io.js.h; path = SocketIO/Source/socket.io.js.h; sourceTree = "<group>"; };
+		7DCF9BE187F86CBE3C8103E0 /* Pods-SIOSocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SIOSocket-prefix.pch"; sourceTree = "<group>"; };
+		82FC7BCA62470F4D7BF042D7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		8F61193D5A0A9B80EB41C23C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		9DA152E7FB3468EB859572D6 /* SIOSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SIOSocket.m; path = SocketIO/Source/SIOSocket.m; sourceTree = "<group>"; };
+		A8F1D2069A006643213AADDC /* Pods-SIOSocket.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SIOSocket.xcconfig"; sourceTree = "<group>"; };
+		B86E843472AC4E4473C25402 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		B8E8E9F2D112D482FEBB03D6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDF726514D4C5C3E0FFEA0D7 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D296BABB5B32F91C0EF609AF /* Pods-SIOSocket-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SIOSocket-Private.xcconfig"; sourceTree = "<group>"; };
+		EE5324A3BFDCB18F43C4AE3E /* libPods-SIOSocket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SIOSocket.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB15D8B32480A94F22D41819 /* Pods-SIOSocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SIOSocket-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9305F04CD71BD2D44FD69026 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48C64EDD5B821407DB49960E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4BC7D27D7F54FAE42A6A96E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BE33C0FA83A54D7B3929F1E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1354806D1528BF7E0243EE66 /* SIOSocket */ = {
+			isa = PBXGroup;
+			children = (
+				1575985941173DA1B1A21790 /* SIOSocket.h */,
+				9DA152E7FB3468EB859572D6 /* SIOSocket.m */,
+				7D460FC5C57E64B237D8A755 /* socket.io.js.h */,
+				959F268DE294E978E5BDA7D0 /* Support Files */,
+			);
+			path = SIOSocket;
+			sourceTree = "<group>";
+		};
+		21347D46173F4A90CA74C82D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BDF726514D4C5C3E0FFEA0D7 /* Pods-acknowledgements.markdown */,
+				62CE2ED5F98258D05401EB1F /* Pods-acknowledgements.plist */,
+				3CC50BCCE00207E2A5B2771D /* Pods-dummy.m */,
+				6D2A6B978C1E5FFDC618F77B /* Pods-environment.h */,
+				B86E843472AC4E4473C25402 /* Pods-resources.sh */,
+				8F61193D5A0A9B80EB41C23C /* Pods.debug.xcconfig */,
+				82FC7BCA62470F4D7BF042D7 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		959F268DE294E978E5BDA7D0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A8F1D2069A006643213AADDC /* Pods-SIOSocket.xcconfig */,
+				D296BABB5B32F91C0EF609AF /* Pods-SIOSocket-Private.xcconfig */,
+				FB15D8B32480A94F22D41819 /* Pods-SIOSocket-dummy.m */,
+				7DCF9BE187F86CBE3C8103E0 /* Pods-SIOSocket-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-SIOSocket";
+			sourceTree = "<group>";
+		};
+		9E81D33E22BD567C59E8523F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				132A5D44C37D8085FA00EFEF /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		B0F8E64A9B33725D21E3D7B9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1354806D1528BF7E0243EE66 /* SIOSocket */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C0AC0634C1EAFC2BB815A4F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B8E8E9F2D112D482FEBB03D6 /* libPods.a */,
+				EE5324A3BFDCB18F43C4AE3E /* libPods-SIOSocket.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB317C9943379234FA7B2EEC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E81D33E22BD567C59E8523F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DB2BEF51EF6B17A7D163D64D = {
+			isa = PBXGroup;
+			children = (
+				500D9B0221B101D47FDAC306 /* Podfile */,
+				CB317C9943379234FA7B2EEC /* Frameworks */,
+				B0F8E64A9B33725D21E3D7B9 /* Pods */,
+				C0AC0634C1EAFC2BB815A4F8 /* Products */,
+				F2E812269DAC6D06157C8328 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		F2E812269DAC6D06157C8328 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				21347D46173F4A90CA74C82D /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1E0EBE3848457DD848579134 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				974E10736EDE43C9C39CB2F6 /* SIOSocket.h in Headers */,
+				6FEA3184F853918E27038A78 /* socket.io.js.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		59B98DEA10B2D1D9B02BA0A1 /* Pods-SIOSocket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E720304F57858BFE79BA64E /* Build configuration list for PBXNativeTarget "Pods-SIOSocket" */;
+			buildPhases = (
+				02A32D90E4897BA147F44A2E /* Sources */,
+				9305F04CD71BD2D44FD69026 /* Frameworks */,
+				1E0EBE3848457DD848579134 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-SIOSocket";
+			productName = "Pods-SIOSocket";
+			productReference = EE5324A3BFDCB18F43C4AE3E /* libPods-SIOSocket.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E64F4EF0A5FA9640B9AED4BC /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61EBD12F63C4B0E7E6DB60A0 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				F61FF0F3A58570A82D6E48E6 /* Sources */,
+				A4BC7D27D7F54FAE42A6A96E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E76B44DC63FC7627C35471D /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = B8E8E9F2D112D482FEBB03D6 /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83B21EEE3D71E4B51869C7B0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = F500C11948155A08E3AAD165 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DB2BEF51EF6B17A7D163D64D;
+			productRefGroup = C0AC0634C1EAFC2BB815A4F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E64F4EF0A5FA9640B9AED4BC /* Pods */,
+				59B98DEA10B2D1D9B02BA0A1 /* Pods-SIOSocket */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		02A32D90E4897BA147F44A2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5EF23CF870826AFDBD3BC5A /* Pods-SIOSocket-dummy.m in Sources */,
+				A898A41D4B7B80AB002A09F6 /* SIOSocket.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F61FF0F3A58570A82D6E48E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37023B1C2FDD552B9FA2BB1D /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2E76B44DC63FC7627C35471D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-SIOSocket";
+			target = 59B98DEA10B2D1D9B02BA0A1 /* Pods-SIOSocket */;
+			targetProxy = E1401D1F8AA46EFA72268E92 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0345BDA1F224A80564E129CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D296BABB5B32F91C0EF609AF /* Pods-SIOSocket-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SIOSocket/Pods-SIOSocket-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		0F745E0B795D1D286E601131 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		40B54C590D38E79620BE0B86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		415FD2039DBDBD7C013C1017 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F61193D5A0A9B80EB41C23C /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		947D76AEE801BF3C9E95AA9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82FC7BCA62470F4D7BF042D7 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		E23206CEC536AA77F5DD6846 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D296BABB5B32F91C0EF609AF /* Pods-SIOSocket-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SIOSocket/Pods-SIOSocket-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		61EBD12F63C4B0E7E6DB60A0 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				415FD2039DBDBD7C013C1017 /* Debug */,
+				947D76AEE801BF3C9E95AA9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E720304F57858BFE79BA64E /* Build configuration list for PBXNativeTarget "Pods-SIOSocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0345BDA1F224A80564E129CC /* Debug */,
+				E23206CEC536AA77F5DD6846 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F500C11948155A08E3AAD165 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40B54C590D38E79620BE0B86 /* Debug */,
+				0F745E0B795D1D286E601131 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83B21EEE3D71E4B51869C7B0 /* Project object */;
+}
