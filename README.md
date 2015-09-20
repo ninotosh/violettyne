@@ -58,7 +58,7 @@ Access http://localhost:3000/ and input a latitude and a longitude like this.
 
 If a green marker appears on the map, you can click it to start a chat.
 
-![chat](readme/chat.gif)
+<img src="readme/chat.gif" width="320"/>
 
 You can send messages from within the browser to the app.
 
@@ -66,4 +66,4 @@ You can send messages from within the browser to the app.
 
 The following is how to sett your photo and nickname.
 
-![setting](readme/setting.gif)
+<img src="readme/setting.gif" width="318"/>
