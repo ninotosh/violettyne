@@ -2,7 +2,7 @@ import Foundation
 
 // NSObject, NSCoding: to be converted to NSData
 // Hashable: to use User as a dictionary key
-class User: NSObject, NSCoding, Hashable {
+class User: NSObject, NSCoding {
     let id: String
     var name: String?
     var image: UIImage?
@@ -23,7 +23,7 @@ class User: NSObject, NSCoding, Hashable {
     }
     
     // NSCoding
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         id = aDecoder.decodeObjectForKey("id") as! String
         name = aDecoder.decodeObjectForKey("name") as? String
         image = aDecoder.decodeObjectForKey("image") as? UIImage

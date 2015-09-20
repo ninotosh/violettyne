@@ -18,14 +18,14 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
         mapView.delegate = self
         
         Socket.onReceiveLocation = {userID, latitude, longitude in
-            var neighbor = User(id: userID)
-            neighbor.name = userID.substringToIndex(advance(userID.startIndex, 6)) // TODO
+            let neighbor = User(id: userID)
+            neighbor.name = userID.substringToIndex(userID.startIndex.advancedBy(6)) // TODO
             dispatch_async(dispatch_get_main_queue()) {
                 let position = CLLocationCoordinate2DMake(latitude, longitude)
                 if let marker = self.neighbors[neighbor] {
                     marker.position = position
                 } else {
-                    var marker = GMSMarker(position: position)
+                    let marker = GMSMarker(position: position)
                     marker.icon = GMSMarker.markerImageWithColor(UIColor.greenColor())
                     marker.userData = NSKeyedArchiver.archivedDataWithRootObject(neighbor)
                     marker.map = self.mapView
@@ -40,7 +40,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
     }
 
     // CLLocationManagerDelegate
-    func locationManager(manager: CLLocationManager!, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
+    func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
         if status == CLAuthorizationStatus.AuthorizedWhenInUse {
             locationManager.distanceFilter = 10 // meters
             locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
@@ -49,8 +49,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
     }
     
     // CLLocationManagerDelegate
-    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
-        if let newLocation = locations.last as? CLLocation {
+    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if let newLocation = locations.last {
             if let oldLocation = self.location {
                 if newLocation.coordinate.longitude == oldLocation.coordinate.longitude && newLocation.coordinate.latitude == oldLocation.coordinate.latitude {
                     return

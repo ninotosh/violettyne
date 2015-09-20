@@ -43,9 +43,9 @@ class SettingViewController: UITableViewController {
         
         switch indexPath.section {
         case 0:
-            cell = tableView.dequeueReusableCellWithIdentifier("profileImageCell", forIndexPath: indexPath) as! UITableViewCell
+            cell = tableView.dequeueReusableCellWithIdentifier("profileImageCell", forIndexPath: indexPath) 
         case 1:
-            cell = tableView.dequeueReusableCellWithIdentifier("nicknameCell", forIndexPath: indexPath) as! UITableViewCell
+            cell = tableView.dequeueReusableCellWithIdentifier("nicknameCell", forIndexPath: indexPath) 
             for obj in cell.contentView.subviews {
                 if let textField = obj as? UITextField {
                     textField.delegate = self
@@ -59,11 +59,11 @@ class SettingViewController: UITableViewController {
             }
         default:
             if indexPath.row == NSLocale.preferredLanguages().count {
-                cell = tableView.dequeueReusableCellWithIdentifier("languageFootnoteCell", forIndexPath: indexPath) as! UITableViewCell
+                cell = tableView.dequeueReusableCellWithIdentifier("languageFootnoteCell", forIndexPath: indexPath) 
             } else {
-                let languageCode = (NSLocale.preferredLanguages() as! [String])[indexPath.row]
+                let languageCode = (NSLocale.preferredLanguages() )[indexPath.row]
                 let locale = NSLocale(localeIdentifier: languageCode)
-                cell = tableView.dequeueReusableCellWithIdentifier("selectedLanguageCell", forIndexPath: indexPath) as! UITableViewCell
+                cell = tableView.dequeueReusableCellWithIdentifier("selectedLanguageCell", forIndexPath: indexPath) 
                 cell.textLabel?.text = locale.displayNameForKey(NSLocaleLanguageCode, value: languageCode)
             }
         }
@@ -83,7 +83,7 @@ extension SettingViewController: UIImagePickerControllerDelegate, UINavigationCo
         presentViewController(controller, animated: true) {}
     }
 
-    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
             if let image = thumbnailSquare(pickedImage, edgeLength: profileImageEdgeLength) {
                 self.profileImageView?.image = image
@@ -112,7 +112,12 @@ extension SettingViewController: UIImagePickerControllerDelegate, UINavigationCo
             height = image.size.width
             width = height
         }
-        return UIImage(CGImage: CGImageCreateWithImageInRect(image.CGImage, CGRectMake(x, y, width, height)))
+        
+        if let i = CGImageCreateWithImageInRect(image.CGImage, CGRectMake(x, y, width, height)) {
+            return UIImage(CGImage: i)
+        } else {
+            return nil
+        }
     }
     
     private func resize(image: UIImage?, edgeLength: Int) -> UIImage? {
@@ -132,6 +137,8 @@ extension SettingViewController: UITextFieldDelegate {
     }
     
     @IBAction func nicknameEditingDidEnd(sender: UITextField) {
-        PersistentStorage.setMyName(sender.text)
+        if let text = sender.text {
+            PersistentStorage.setMyName(text)
+        }
     }
 }

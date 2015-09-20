@@ -56,7 +56,13 @@ class MessageTableViewController: UITableViewController, UITextFieldDelegate {
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         let indexPath = NSIndexPath(forRow: messages.count, inSection: 0)
         let myself = PersistentStorage.getMyself()
-        let message = Message(user: myself, text: textField.text)
+        let text: String
+        if let t = textField.text {
+            text = t
+        } else {
+            return false
+        }
+        let message = Message(user: myself, text: text)
         messages.append(message)
         Socket.sendMessage(neighbor, message: message)
         PersistentStorage.setMessages(neighbor, messages: messages)
@@ -78,7 +84,7 @@ class MessageTableViewController: UITableViewController, UITextFieldDelegate {
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("MessageCell", forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("MessageCell", forIndexPath: indexPath) 
 
         let message = messages[indexPath.row]
         let myself = PersistentStorage.getMyself()

@@ -10,7 +10,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         if let keyFile = NSBundle.mainBundle().pathForResource("mapAPIKey", ofType: "txt"),
-            let key = NSString(contentsOfFile: keyFile, encoding: NSUTF8StringEncoding, error: nil) as? String {
+            let key = (try? NSString(contentsOfFile: keyFile, encoding: NSUTF8StringEncoding)) as? String {
                 GMSServices.provideAPIKey(key)
         }
 

@@ -16,9 +16,9 @@ class Message: NSObject, NSCoding {
     }
     
     // NSCoding
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         date = aDecoder.decodeObjectForKey("date") as! NSDate
-        user = User(coder: aDecoder)
+        user = User(coder: aDecoder)!
         text = aDecoder.decodeObjectForKey("text") as! String
     }
 }

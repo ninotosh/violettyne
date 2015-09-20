@@ -32,7 +32,7 @@ class NeighborTableViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("NeighborCell", forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("NeighborCell", forIndexPath: indexPath) 
 
         // Configure the cell...
         cell.textLabel?.text = PersistentStorage.getNeighbors()[indexPath.row].id
