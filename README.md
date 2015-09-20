@@ -54,6 +54,16 @@ Because this is a chat application, there must be neighbors appearing on the map
 
 Access http://localhost:3000/ and input a latitude and a longitude like this.
 
-![location.png](location.png)
+![location](readme/location.png)
 
 If a green marker appears on the map, you can click it to start a chat.
+
+![chat](readme/chat.gif)
+
+You can send messages from within the browser to the app.
+
+![message](readme/message.png)
+
+The following is how to sett your photo and nickname.
+
+![setting](readme/setting.gif)
