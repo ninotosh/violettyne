@@ -52,7 +52,7 @@ Simulate a Neighbor
 --
 Because this is a chat application, there must be neighbors appearing on the map to chat with.
 
-Access http://localhost:3000/ and input a latitude and a longitude like this.
+Access http://localhost:3000/ and input a latitude and a longitude.
 
 ![location](readme/location.png)
 
@@ -64,6 +64,6 @@ You can send messages from within the browser to the app.
 
 ![message](readme/message.png)
 
-The following is how to sett your photo and nickname.
+The following is how to set your photo and nickname.
 
 <img src="readme/setting.gif" width="318"/>
