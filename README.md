@@ -1,6 +1,7 @@
 Prerequisites
 --
 - Install Vagrant.
+- Install CocoaPods.
 - Get a Google Maps API key for iOS.
 
 
@@ -40,7 +41,8 @@ Run the Client
 --
 
 ```
-violettyne/ios ;# under the clone directory
+cd violettyne/ios ;# under the clone directory
+pod install
 echo -n "Your Google Maps API Key" > violettyne/mapAPIKey.txt
 open violettyne.xcworkspace
 ```
