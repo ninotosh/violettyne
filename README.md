@@ -47,6 +47,10 @@ echo -n "Your Google Maps API Key" > violettyne/mapAPIKey.txt
 open violettyne.xcworkspace
 ```
 
+Change the Bundle Identifier according to your Google Maps API Key.
+
+![change_bundle_id](readme/change_bundle_id.png)
+
 Run the application in Xcode.
 
 
