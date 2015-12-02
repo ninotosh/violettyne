@@ -1,3 +1,5 @@
+Violettyne is a map + chat iOS application implemented with Google Maps and SIOSocket.
+
 Prerequisites
 --
 - Install Vagrant.
